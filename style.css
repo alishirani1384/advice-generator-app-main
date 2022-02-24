@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Darkk-Grayish-Blue: hsl(217, 19%, 30%);
+
+    --font-size:28px;
+}
+*{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Grayish-Blue);
+}
+.card{
+    background: var(--Darkk-Grayish-Blue);
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 34px 17px rgba(0,0,0,0.42);
+    position: relative;
+}
+.card-container{
+    margin: 2rem;
+}
+#id-num{
+    color: var(--Neon-Green);
+}
+#advise{
+    color: var(--Light-Cyan);
+    font-size: var(--font-size);
+    margin: 1rem 0;
+}
+#advise::after{
+    content: url("images/pattern-divider-mobile.svg");
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+}
+#ad-genrator{
+    background: var(--Neon-Green);
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -11%;
+    right: 42.5%;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+#ad-genrator:hover{
+    box-shadow: 0px 0px 20px 10px rgba(82,255,168,1);
+    transition: all .3s ease;
+}
+@media screen and (min-width:700px) {
+    .card{
+        width: 500px;
+    }
+
+    
+}
